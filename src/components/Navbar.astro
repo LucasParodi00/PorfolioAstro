@@ -1,0 +1,56 @@
+---
+import Hamburguesa from "./iconos/Hamburguesa.astro";
+---
+
+<header class="bg-negro py-5 fixed z-50 w-full top-0">
+    <div
+        class="max-w-[1100px] mx-auto lg:flex flex-row justify-between items-center"
+    >
+        <div class="flex justify-between px-10">
+            <span class="text-rosado text-2xl">LP</span>
+            <div class="block lg:hidden">
+                <button
+                    class="w-6"
+                    id="btnHamburguesa"
+                    aria-label="Abrir menú de navegación"
+                    data-astro-source-file="D:/Codigos/Porfolio/src/components/Navbar.astro"
+                    data-astro-source-loc="12:57"
+                >
+                    <Hamburguesa />
+                </button>
+            </div>
+        </div>
+        <nav
+            class="hidden text-center h-[400px] uppercase flex-col items-center justify-center lg:flex lg:flex-row gap-5 lg:h-auto"
+            id="navBar"
+        >
+            <a class="block hover:text-rosado transition delay-50" href="#"
+                >Inicio</a
+            >
+            <a
+                class="block hover:text-rosado transition delay-50"
+                href="#estudios">Estudios</a
+            >
+            <a
+                class="block hover:text-rosado transition delay-50"
+                href="#proyectos">Proyectos</a
+            >
+        </nav>
+    </div>
+</header>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const navBar = document.querySelector("#navBar");
+        const btnHamburguesa = document.querySelector("#btnHamburguesa");
+
+        btnHamburguesa?.addEventListener("click", () => {
+            toggleNavbar(navBar);
+        });
+
+        const toggleNavbar = (element: any) => {
+            element.classList.toggle("hidden");
+            element.classList.toggle("flex");
+        };
+    });
+</script>

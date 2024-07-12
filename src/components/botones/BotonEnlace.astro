@@ -1,0 +1,30 @@
+---
+interface Props {
+    enlace: string;
+    estilos?: string;
+}
+
+const { enlace, estilos = "" } = Astro.props;
+---
+
+<a
+    href={enlace}
+    target="_blank"
+    class=`efecto-boton flex flex-row gap-3 text-xl py-2 px-5 border-solid border-2 border-rosado rounded-lg justify-center items-center ${estilos}`
+>
+    <slot name="icono" />
+    <slot name="texto" />
+</a>
+
+<style>
+    .efecto-boton {
+        transition: all 0.5s ease-in-out;
+        position: relative;
+    }
+
+    .efecto-boton:hover {
+        background-color: #ff5733;
+        color: #000000;
+        border-color: #ff3533;
+    }
+</style>

@@ -1,0 +1,42 @@
+---
+import BotonEnlace from "./botones/BotonEnlace.astro";
+import LinkedIn from "./iconos/LinkedIn.astro";
+import GitHub from "./iconos/GitHub.astro";
+---
+
+<section
+    class="h-[100vh] flex flex-row items-center bg-right bg-no-repeat bg-contain"
+>
+    <div class="w-full lg:w-4/5">
+        <div>
+            <h1 class="text-blanco text-4xl md:text-6xl mb-3">
+                Soy <span
+                    class="text-naranjaBrillante font-bold block text-7xl lg:inline md:text-8xl"
+                    >Lucas Parodi</span
+                >
+            </h1>
+            <h2 class="text-xl md:text-3xl lg:text-4xl">
+                Analista en Sistemas
+            </h2>
+            <p class="pt-7 text-1xl">
+                Estudiante de Licenciatura en Sistemas y desarrollador web. Me
+                considero una persona autodidacta, que le gusta trabajar en
+                equipo y ver cómo los proyectos se hacen realidad.
+            </p>
+        </div>
+        <div
+            class="flex flex-row mt-20 gap-6 flex-wrap justify-center lg:justify-start"
+        >
+            <BotonEnlace
+                enlace="https://www.linkedin.com/in/parodi-lucas-ivan/"
+            >
+                <LinkedIn slot="icono" class="w-6" />
+                <p slot="texto">LinkedIn</p>
+            </BotonEnlace>
+            <BotonEnlace enlace="https://github.com/LucasParodi00">
+                <GitHub slot="icono" class="w-6 text-blanco" />
+                <p slot="texto">GitHub</p>
+            </BotonEnlace>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,54 @@
+---
+import Lenguaje from "./botones/Lenguaje.astro";
+import GitHub from "./iconos/GitHub.astro";
+import IconoHref from "./IconoHref.astro";
+interface Proyecto {
+    nombre: string;
+    parrafo: string;
+    imagenWebp: string;
+    imagenJpeg: string;
+    lenguajes: string[];
+    enlace: string;
+}
+
+interface Props {
+    proyecto: Proyecto;
+}
+
+const { proyecto } = Astro.props;
+---
+
+{
+    (
+        <div class="border-[1px] border-gray-500 p-3 w-[320px] rounded-lg">
+            <div class="h-[300px]">
+                <picture>
+                    <source srcset={proyecto.imagenWebp} type="image/webp" />
+                    <img
+                        src={proyecto.imagenJpeg}
+                        alt={proyecto.nombre}
+                        loading="lazy"
+                        class="object-cover w-full h-full"
+                    />
+                </picture>
+            </div>
+            <div class="flex flex-row items-center mt-6 justify-between">
+                <h3 class="text-gray-300 text-3xl ">{proyecto.nombre}</h3>
+                <IconoHref
+                    estilo={"text-naranjaBrillante"}
+                    link={proyecto.enlace}
+                >
+                    <GitHub class="w-5" />
+                </IconoHref>
+            </div>
+            <p class="pt-3 text-wrap text-sm text-gray-300">
+                {proyecto.parrafo}
+            </p>
+            <div class="flex flex-row flex-wrap mt-5 gap-2">
+                {proyecto.lenguajes.map((len) => (
+                    <Lenguaje lenguaje={len} />
+                ))}
+            </div>
+        </div>
+    )
+}

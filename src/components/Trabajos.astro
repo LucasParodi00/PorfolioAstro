@@ -1,0 +1,14 @@
+---
+import CardTrabajo from "./CardTrabajo.astro";
+import proyectos from "./helper/proyectos.json";
+---
+
+<section class="w-full mb-10 md:py-20" id="proyectos">
+    <h2 class="text-5xl uppercase mb-2">Proyectos</h2>
+    <hr class="mb-5" />
+    <div
+        class="flex flex-row flex-wrap w-full gap-4 justify-center lg:justify-between"
+    >
+        {proyectos.map((proyecto) => <CardTrabajo proyecto={proyecto} />)}
+    </div>
+</section>

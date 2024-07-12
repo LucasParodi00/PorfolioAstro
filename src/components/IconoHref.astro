@@ -1,0 +1,16 @@
+---
+interface Props {
+    link: string;
+    estilo?: string;
+}
+
+const { link, estilo = "" } = Astro.props;
+---
+
+<a
+    class={`hover:text-rosado duration-500 ${estilo}`}
+    target="_blank"
+    href={link}
+>
+    <slot />
+</a>

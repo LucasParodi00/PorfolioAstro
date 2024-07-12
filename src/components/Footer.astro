@@ -1,0 +1,30 @@
+---
+import IconoHref from "./IconoHref.astro";
+import Gmail from "./iconos/Gmail.astro";
+import LinkedIn from "./iconos/LinkedIn.astro";
+import Instagram from "./iconos/instagram.astro";
+import X from "./iconos/x.astro";
+---
+
+<footer class="h-[200px] bg-black text-center">
+    <div class="flex flex-row justify-center pt-6 gap-5">
+        <IconoHref link="https://x.com/parodilucas_" estilo="w-11">
+            <X />
+        </IconoHref>
+        <IconoHref
+            link="https://www.linkedin.com/in/parodi-lucas-ivan/"
+            estilo="w-12"
+        >
+            <LinkedIn />
+        </IconoHref>
+        <IconoHref link="https://www.instagram.com/parodilucas_/" estilo="w-12">
+            <Instagram />
+        </IconoHref>
+        <IconoHref link="mailto:lucasparodi00@gmail.com">
+            <Gmail class="w-12" />
+        </IconoHref>
+    </div>
+    <p class="mt-5 text-lg hover:text-rosado duration-1000">
+        lucasparodi00@gmail.com
+    </p>
+</footer>

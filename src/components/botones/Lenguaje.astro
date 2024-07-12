@@ -1,0 +1,11 @@
+---
+interface Props {
+    lenguaje: string;
+}
+
+const { lenguaje } = Astro.props;
+---
+
+<p class="flex px-2 py-[1px] border-[1px] border-gray-600 rounded-xl text-xs">
+    {lenguaje}
+</p>

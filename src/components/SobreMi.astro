@@ -1,0 +1,54 @@
+---
+import BotonEnlace from "./botones/BotonEnlace.astro";
+import Download from "./iconos/Download.astro";
+---
+
+<section class="mt-10 h-full">
+    <div class="grid lg:grid-cols-12 justify-center items-center gap-10">
+        <div class="lg:col-span-8">
+            <h4 class="uppercase text-3xl mb-5 text-rosado">Sobre mi</h4>
+            <p>
+                Nací en Argentina y actualmente estudio Licenciatura en Sistemas
+                de Información en la UNNE, donde obtuve mi título de Analista en
+                Sistemas.
+            </p>
+            <p>
+                Mi camino profesional se centra en el desarrollo web, un área
+                donde me destaco por mi autodidactismo y responsabilidad, así
+                como por mis habilidades para el trabajo en equipo.
+            </p>
+            <p>
+                Mi pasión por la tecnología y el deseo de crecer en un entorno
+                profesional me impulsan constantemente a buscar nuevos desafíos
+                y oportunidades de aprendizaje.
+            </p>
+            <div class="flex flex-row mt-10">
+                <BotonEnlace enlace="/public/LucasParodiCV.pdf">
+                    <Download slot="icono" class="w-8" />
+                    <p slot="texto">Descargar CV</p>
+                </BotonEnlace>
+            </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-row justify-center">
+            <img
+                src="/public/img1.png"
+                alt="Lucas Parodi"
+                class="lg:object-cover md:h-[50%] md:w-[50%] lg:h-[100%] lg:w-[100%]"
+            />
+        </div>
+
+        <!-- <div class="relative flex flex-col">
+            <div class="w-80 h-80 z-10 bg-[#13133b] rounded-lg">
+                <img
+                    src="../../public/img1.png"
+                    alt="Lucas Parodi"
+                    class="object-contain h-[100%] w-[100%]"
+                />
+            </div>
+            <div
+                class="w-80 h-80 absolute translate-x-[20px] translate-y-[20px] bottom-0 border-4 border-separate border-rosado"
+            >
+            </div>
+        </div> -->
+    </div>
+</section>

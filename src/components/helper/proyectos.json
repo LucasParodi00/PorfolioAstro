@@ -1,0 +1,80 @@
+[
+    {
+        "nombre": "Vegetarian",
+        "parrafo": "Aplicación web local para la venta, compra y control de stock en la tienda Vegetarian, especializada en productos vegetarianos congelados.",
+        "imagenWebp": "/public/vegetarian.webp",
+        "imagenJpeg": "/public/vegetarian.jpeg",
+        "lenguajes": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "JavaScript",
+            "CodeIgniter",
+            "MySQL"
+        ],
+        "enlace": "https://github.com/LucasParodi00/Vegetarian"
+    },
+    {
+        "nombre": "Kiosko Hell",
+        "parrafo": "Aplicación de escritorio para la gestión de usuarios, productos, impresión de facturas, copias de seguridad e integración de pagos en un kiosko 24 horas.",
+        "imagenWebp": "/public/kiosko.webp",
+        "imagenJpeg": "/public/kiosko.jpeg",
+        "lenguajes": [
+            "C#",
+            "SQL Server"
+        ],
+        "enlace": "https://github.com/LucasParodi00/Kiosko-Hell"
+    },
+    {
+        "nombre": "Bull Gym",
+        "parrafo": "Aplicación web local para la gestión de profesores, alumnos y fechas de pago en un gimnasio.",
+        "imagenWebp": "/public/gym.webp",
+        "imagenJpeg": "/public/gym.jpeg",
+        "lenguajes": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "JavaScript",
+            "MySQL"
+        ],
+        "enlace": "https://github.com/LucasParodi00/GYM"
+    },
+    {
+        "nombre": "Pet Friend",
+        "parrafo": "Aplicación web personalizada, corriendo en un servidor local, para la gestión de ventas, compras, usuarios y generación de recibos.",
+        "imagenWebp": "/public/petfriend.webp",
+        "imagenJpeg": "/public/petfriend.jpeg",
+        "lenguajes": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "JavaScript",
+            "MySQL"
+        ],
+        "enlace": "https://github.com/LucasParodi00/PetFriend"
+    },
+    {
+        "nombre": "Vet Sales",
+        "parrafo": "Aplicación web genérica para la gestión de ventas, compras, usuarios, generación de recibos y envío por WhatsApp.",
+        "imagenWebp": "/public/vetsale.webp",
+        "imagenJpeg": "/public/vetsale.jpeg",
+        "lenguajes": [
+            "React.js",
+            "Express.js",
+            "Material UI",
+            "MySQL"
+        ],
+        "enlace": "https://github.com/LucasParodi00/VetSales"
+    },
+    {
+        "nombre": "Portfolio",
+        "parrafo": "Mi portafolio personal.",
+        "imagenWebp": "/public/porfolio.webp",
+        "imagenJpeg": "/public/porfolio.jpeg",
+        "lenguajes": [
+            "Astro",
+            "Tailwind CSS"
+        ],
+        "enlace": "https://github.com/LucasParodi00/Portfolio"
+    }
+]

@@ -1,0 +1,23 @@
+---
+import CardEducacion from "./CardEducacion.astro";
+import educaciones from "./helper/educacion.json";
+import type { Educacion } from "./types/educacions.ts";
+---
+
+<section class="w-full flex flex-col justify-center py-20 my-10" id="estudios">
+    <h2 class="text-5xl uppercase mb-2">Educacion</h2>
+    <hr class="mb-5" />
+    <ol class="relative border-s border-red-600 dark:border-rosado">
+        {
+            educaciones.map((educacion: Educacion) => (
+                <li class="mb-1 ms-4 ml-10">
+                    <div class="absolute w-3 h-3 bg-red-600 rounded-full mt-1.5 -start-1.5 border border-red-600 dark:border-gnaranjaBrillante dark:bg-naranjaBrillante" />
+                    <time class="mb-1 text-sm font-normal leading-none text-naranjaBrillante dark:text-naranjaBrillante">
+                        {educacion.fecha}
+                    </time>
+                    <CardEducacion educacion={educacion.educacion} />
+                </li>
+            ))
+        }
+    </ol>
+</section>

@@ -1,0 +1,62 @@
+---
+import LinkedIn from "./iconos/LinkedIn.astro";
+---
+
+<section class="py-10 my-10 flex fle-row gap-4" id="contacto">
+    <div>
+        <form class="flex flex-col gap-10 p-10">
+            <div class="w-full flex justify-center gap-16">
+                <div>
+                    <label for="name">Nombre</label>
+                    <div>
+                        <input
+                            class="h-12 w-[400px] bg-[#0b0d2d] rounded-lg p-2 border border-gray-600 focus:border-rosado focus:outline-none text-blanco"
+                            type="text"
+                            name="name"
+                            placeholder="Ingrese su nombre"
+                            required
+                        />
+                    </div>
+                </div>
+                <div>
+                    <label for="correo">Correo</label>
+                    <div>
+                        <input
+                            class="h-12 w-[400px] bg-[#0b0d2d] rounded-lg p-2 border border-gray-600 focus:border-rosado focus:outline-none text-blanco"
+                            type="email"
+                            name="correo"
+                            placeholder="Ingrese su correo"
+                            required
+                            id="correo"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje: </label>
+                <div>
+                    <textarea
+                        class="w-full bg-[#0b0d2d] rounded-lg p-2 border border-gray-600 focus:border-rosado focus:outline-none text-blanco"
+                        name="mensaje"
+                        id="mensaje"
+                        placeholder="Escribe tu mensaje"
+                        required
+                        rows="10"></textarea>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center">
+                <button type="submit" class="bg-naranja py-4 px-16 rounded-lg"
+                    >Enviar</button
+                >
+            </div>
+        </form>
+    </div>
+    <div
+        class="border-gray-600 border rounded-lg w-full flex flex-col gap-16 items-center justify-center"
+    >
+        <LinkedIn class="w-16" />
+        <LinkedIn class="w-16" />
+        <LinkedIn class="w-16" />
+        <LinkedIn class="w-16" />
+    </div>
+</section>

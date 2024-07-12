@@ -1,0 +1,21 @@
+---
+import BotonEnlace from "./botones/BotonEnlace.astro";
+import Gmail from "./iconos/Gmail.astro";
+---
+
+<div
+    class="grid w-full my-[50px] border-y-2 border-gray-500 border-opacity-50 items-center rounded-lg py-10 lg:grid-cols-12"
+>
+    <div class="lg:col-span-9">
+        <h4 class="text-3xl lg:text-4xl mb-5 text-wrap">
+            ¿Tienes algun proyecto en mente?
+        </h4>
+        <h5 class="text-lg lg:text-2xl">Trabajemos juntos.</h5>
+    </div>
+    <div class="lg:col-span-3 mt-10 lg:mt-0">
+        <BotonEnlace enlace="mailto:lucasparodi00@gmail.com">
+            <Gmail slot="icono" class="w-7 text-blanco" />
+            <p slot="texto">Contactame</p>
+        </BotonEnlace>
+    </div>
+</div>

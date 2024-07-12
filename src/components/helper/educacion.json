@@ -1,0 +1,91 @@
+[
+    {
+        "fecha": 2023,
+        "educacion": [
+            {
+                "titulo": "Analista en Sistemas",
+                "universidad": "Universidad Nacional del Nordeste",
+                "items": [
+                    {
+                        "titulo": "Análisis y creación de Proyectos",
+                        "descripcion": "Planificación, análisis y ejecución de proyectos de software, aplicando metodologías ágiles y tradicionales."
+                    },
+                    {
+                        "titulo": "Desarrollo de Aplicaciones Web y de Escritorio",
+                        "descripcion": "Proyectos de aplicaciones web y de escritorio, utilizando tecnologías como HTML, CSS, JavaScript, React, Angular, Django y Node.js."
+                    },
+                    {
+                        "titulo": "Elicitación de Requerimientos",
+                        "descripcion": "Proceso de recolección y análisis de requisitos, asegurando la comprensión y documentación adecuada de las necesidades del cliente."
+                    },
+                    {
+                        "titulo": "Administración de Redes",
+                        "descripcion": "Diseño, configuración y mantenimiento de redes, incluyendo la utilización de herramientas como Cisco Packet Tracer y Wireshark para la simulación y prueba de redes."
+                    },
+                    {
+                        "titulo": "Manejo de Bases de Datos",
+                        "descripcion": "Diseño, implementación y administración de bases de datos relacionales utilizando MySQL, PostgreSQL y SQL Server."
+                    },
+                    {
+                        "titulo": "Organigramas y Cursogramas de Empresas",
+                        "descripcion": "Desarrollo y análisis de organigramas y cursogramas para mejorar la eficiencia y estructura organizativa de las empresas."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "fecha": 2022,
+        "educacion": [
+            {
+                "titulo": "Desarrollador Full Stack",
+                "universidad": "Udemy",
+                "items": [
+                    {
+                        "titulo": "Tecnologías Fundamentales",
+                        "descripcion": "JavaScript, CSS, HTML, PHP."
+                    },
+                    {
+                        "titulo": "Frameworks de Desarrollo",
+                        "descripcion": "React.js, Node.js, Express, CodeIgniter."
+                    },
+                    {
+                        "titulo": "Frameworks de Diseño",
+                        "descripcion": "Bootstrap, Material UI, Tailwind CSS."
+                    },
+                    {
+                        "titulo": "Herramientas de Diseño de UI",
+                        "descripcion": "Figma."
+                    },
+                    {
+                        "titulo": "Base de Datos",
+                        "descripcion": "MySQL, PostgreSQL y SQL Server."
+                    },
+                    {
+                        "titulo": "Administración de Servidores",
+                        "descripcion": "Configuración y administración básica de servidores Linux con Apache, y conexión SSH para gestión remota."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "fecha": 2016,
+        "educacion": [
+            {
+                "titulo": "Técnico Electricista Profesional",
+                "universidad": "Escuela Técnica Fray Luis Beltrán",
+                "items": [
+                    {
+                        "titulo": "Proyecto Semáforo Azul",
+                        "descripcion": "Participación en el proyecto Semáforo Azul durante mi formación técnica, aplicando conocimientos en electricidad y electrónica para implementar soluciones de control de tráfico."
+                    },
+                    {
+                        "titulo": "Pasantías en D.P.E.C.",
+                        "descripcion": "Realización de pasantías en D.P.E.C. (Direccion Provincial de Energia de Corrientes), donde adquirí experiencia práctica en el campo eléctrico, participando en proyectos y operaciones relacionadas con la distribución de energía."
+                    }
+                ]
+            }
+        ]
+    }
+]

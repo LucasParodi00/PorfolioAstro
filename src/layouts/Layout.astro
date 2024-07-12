@@ -1,0 +1,71 @@
+---
+import "@fontsource-variable/onest";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Portafolio de Parodi Lucas Iván | Analista en Sistemas"
+		/>
+		<meta
+			name="keywords"
+			content="Portafolio, Lucas Iván Parodi, Analista en Sistemas, Desarrollador Web, Creación y Gestión de Proyectos"
+		/>
+		<meta name="author" content="Lucas Iván Parodi" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta property="og:title" content={title} />
+		<meta
+			property="og:description"
+			content="Portafolio de Parodi Lucas Iván | Analista en Sistemas"
+		/>
+		<meta property="og:image" content="/public/img1.png" />
+		<meta property="og:url" content="https://www.parodilucas.com" />
+		<meta property="og:type" content="website" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta
+			name="twitter:description"
+			content="Portafolio de Parodi Lucas Iván | Analista en Sistemas"
+		/>
+		<meta name="twitter:image" content="/public/img1.png" />
+
+		<link rel="canonical" href="https://www.parodilucas.com" />
+		<link rel="icon" href="../../public/icon.png" type="image/x-icon" />
+
+		<title>{title}</title>
+	</head>
+	<body>
+		<Navbar />
+		<main class="max-w-[1100px] mx-auto px-7 sm:p-1 md:p-10">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	html {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+		scroll-behavior: smooth;
+	}
+	body {
+		font-family: "Onest Variable", sans-serif;
+		background-color: #000027;
+		color: #ffffff;
+	}
+</style>

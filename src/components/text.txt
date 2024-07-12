@@ -1,0 +1,159 @@
+---
+import IconoHref from "./IconoHref.astro";
+import GitHub from "./iconos/GitHub.astro";
+import Hamburguesa from "./iconos/Hamburguesa.astro";
+import LinkedIn from "./iconos/LinkedIn.astro";
+---
+
+<header class="w-full py-4 fixed bottom-0 bg-negro lg:bg-inherit lg:top-0">
+    <div class="flex flex-row justify-between items-center px-4">
+        <span class="text-rosado text-2xl font-bold px-2">LP</span>
+        <div>
+            <button class="w-10" id="btnHamburguesa">
+                <Hamburguesa />
+            </button>
+        </div>
+        <div
+            class="hidden absolute left-1/2 -top-28 transform -translate-x-1/2 -translate-y-16 bg-negro pt-10 lg:flex w-full lg:bg-inherit lg:relative lg:translate-x-0 lg:translate-y-0 lg:left-0 lg:top-0"
+            id="divNavbar"
+        >
+            <nav class="lg:flex" id="navmenu">
+                <a
+                    class="block uppercase hover:text-rosado text-xl text-center mb-"
+                    href="#inicio">Inicio</a
+                >
+                <a
+                    class="block uppercase hover:text-rosado text-xl text-center mb-"
+                    href="#sobreMi">Sobre Mi</a
+                >
+                <a
+                    class="block uppercase hover:text-rosado text-xl text-center mb-"
+                    href="#proyectos">Proyectos</a
+                >
+                <a
+                    class="block uppercase hover:text-rosado text-xl text-center mb-"
+                    href="#contacto">Contacto</a
+                >
+            </nav>
+            <div
+                class="flex flex-row justify-center gap-4 mt-4"
+                id="navmenu-social"
+            >
+                <IconoHref link="https://www.github.com/LucasParodi00">
+                    <GitHub />
+                </IconoHref>
+                <IconoHref
+                    link="https://www.linkedin.com/in/lucas-ivan-parodi-502499236/"
+                >
+                    <LinkedIn />
+                </IconoHref>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const btnHamburguesa = document.querySelector("#btnHamburguesa");
+        // const navmenu = document.querySelector("#navmenu");
+        const navmenuItems = document.querySelectorAll("#navmenu a");
+        // const navmenuSocial = document.querySelector("#navmenu-social");
+
+        const divNavbar = document.querySelector("#divNavbar");
+
+        btnHamburguesa?.addEventListener("click", () => {
+            divNavbar?.classList.toggle("hidden");
+        });
+
+        navmenuItems.forEach((item) => {
+            item.addEventListener("click", () => {
+                divNavbar?.classList.toggle("hidden");
+            });
+        });
+
+        // const toggleMenu = () => {
+        //     navmenu?.classList.toggle("hidden");
+        //     toggleFlex(navmenuSocial);
+        // };
+
+        // const toggleFlex = (element: any) => {
+        //     element.classList.toggle("hidden");
+        //     element.classList.toggle("flex");
+        // };
+
+        // btnHamburguesa?.addEventListener("click", toggleMenu);
+    });
+</script>
+
+<ul>
+    <li>
+        <h2>Desarrollo de Software</h2>
+        <ul>
+            <li>
+                <strong>Desarrollo Web</strong>: Creación de aplicaciones web
+                utilizando tecnologías como HTML, CSS, JavaScript, frameworks y
+                backends
+            </li>
+            <li>
+                <strong>Desarrollo de Escritorio</strong>: Creación de
+                aplicaciones de escritorio con tecnologías como C#.
+            </li>
+            <li>
+                <strong>Bases de Datos</strong>: Diseño, implementación y
+                administración de bases de datos relacionales MySQL y SQL
+                Server.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h2>Diseño de Arquitectura de Software</h2>
+        <ul>
+            <li>
+                <strong>Patrones de Diseño</strong>: Aplicación de patrones de
+                diseño para la resolución de problemas comunes en el desarrollo
+                de software.
+            </li>
+            <li>
+                <strong>Modelado UML</strong>: Uso de diagramas UML para modelar
+                la estructura y comportamiento de sistemas.
+            </li>
+            <li>
+                <strong>Arquitectura de Software</strong>: Diseño de
+                arquitecturas escalables y eficientes, incluyendo arquitectura
+                de microservicios.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h2>Redes y Telecomunicaciones</h2>
+        <ul>
+            <li>
+                <strong>Configuración y Mantenimiento de Redes</strong>:
+                Instalación, configuración y mantenimiento de redes de
+                computadoras, incluyendo VLANs y ruteo.
+            </li>
+            <li>
+                <strong>Relevamiento y Diagnóstico de Redes</strong>: Evaluación
+                de infraestructura de redes existentes y propuesta de mejoras.
+            </li>
+            <li>
+                <strong>Simulaciones con Cisco Packet Tracer</strong>: Uso de
+                simuladores de redes para diseñar y probar configuraciones de
+                red.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h2>Otras Habilidades</h2>
+        <ul>
+            <li>
+                <strong>Metodologías Ágiles</strong>: Aplicación de metodologías
+                ágiles (Scrum, Kanban) en el desarrollo de proyectos.
+            </li>
+            <li>
+                <strong>Trabajo en Equipo</strong>: Habilidades de colaboración
+                y comunicación efectiva dentro de equipos multidisciplinarios.
+            </li>
+        </ul>
+    </li>
+</ul>

@@ -1,0 +1,35 @@
+---
+import { type ItemEducacion } from "./types/educacions";
+const { educacion } = Astro.props;
+---
+
+{
+    educacion.map((items: ItemEducacion) => (
+        <div class="w-full grid lg:grid-cols-2 border-t-[1px] border-gray-600 py-3 mb-10 md:mb-3">
+            <div class="mb-5 lg:m-0">
+                <div>
+                    <h3 class="text-3xl">{items.titulo}</h3>
+                    <h4 class="italic text-gray-500">{items.universidad}</h4>
+                </div>
+            </div>
+            <div class="">
+                <ul class="list-disc punto-lista text-gray-400">
+                    {items.items.map((item) => (
+                        <li>
+                            <strong class="block italic font-light text-gray-200 my-1">
+                                {item.titulo}
+                            </strong>
+                            {item.descripcion}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    ))
+}
+
+<style>
+    .punto-lista li::marker {
+        color: rgb(255, 0, 179); /* Cambia el color a tu preferencia */
+    }
+</style>
